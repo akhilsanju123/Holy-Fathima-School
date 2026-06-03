@@ -2,26 +2,26 @@ import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ChevronLeft, ChevronRight, Sparkles } from "lucide-react";
-import heroBannerData from "@/assets/hero-banner.png.asset.json";
+import campus from "@/assets/campus.jpg";
+import classroom1 from "@/assets/classroom-1.webp";
+import classroom2 from "@/assets/classroom-2.webp";
 import logo from "@/assets/logo.webp";
-import { SITE_MEDIA } from "@/lib/site-media";
-
 
 const slides = [
   {
-    image: heroBannerData.url,
+    image: campus,
     eyebrow: "Welcome to Holy Fathima High School",
-    title: "Building Bright Futures\nSince 1989",
+    title: "Building Bright Futures\nSince 2003",
     subtitle: "Premium English-medium education from Nursery to Class 10 — CBSE primary and SSC high school in the heart of Hafeezpet, Hyderabad.",
   },
   {
-    image: SITE_MEDIA.readingCircle,
+    image: classroom1,
     eyebrow: "Where Learning Comes Alive",
     title: "Inspiring Minds,\nShaping Tomorrow",
     subtitle: "Experienced faculty, modern classrooms, and a curriculum that nurtures curiosity and confidence.",
   },
   {
-    image: SITE_MEDIA.activityLearning,
+    image: classroom2,
     eyebrow: "Holistic Development",
     title: "Knowledge is Power.\nCharacter is Everything.",
     subtitle: "Academics, sports, arts and values — a complete educational journey for every child.",
