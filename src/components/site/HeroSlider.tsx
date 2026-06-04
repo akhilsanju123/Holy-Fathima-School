@@ -9,7 +9,7 @@ import logo from "@/assets/logo.webp";
 
 const slides = [
   {
-    image: heroBannerData.url,
+    image: heroBanner,
     eyebrow: "Welcome to Holy Fathima High School",
     title: "Building Bright Futures\nSince 1989",
     subtitle: "Premium English-medium education from Nursery to Class 10 — CBSE primary and SSC high school in the heart of Hafeezpet, Hyderabad.",
