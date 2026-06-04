@@ -51,10 +51,10 @@ export function AboutSection() {
         <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }} className="relative">
           <div className="absolute -inset-4 gradient-gold rounded-3xl opacity-30 blur-2xl" />
           <div className="relative grid grid-cols-5 grid-rows-6 gap-3 h-[520px]">
-            <img src={campus} alt="Campus" className="col-span-3 row-span-4 rounded-3xl object-cover w-full h-full shadow-glow" />
-            <img src={classroom2} alt="" className="col-span-2 row-span-3 rounded-3xl object-cover w-full h-full" />
-            <img src={office} alt="" className="col-span-2 row-span-3 rounded-3xl object-cover w-full h-full" />
-            <img src={classroom1} alt="" className="col-span-3 row-span-2 rounded-3xl object-cover w-full h-full" />
+            <img src={campus} alt="Holy Fathima school building" className="col-span-3 row-span-4 rounded-3xl object-cover w-full h-full shadow-glow" />
+            <img src={activity3} alt="Students learning together in classroom" className="col-span-2 row-span-3 rounded-3xl object-cover w-full h-full" />
+            <img src={activity4} alt="Interactive classroom activity" className="col-span-2 row-span-3 rounded-3xl object-cover w-full h-full" />
+            <img src={activity1} alt="Montessori learning activity" className="col-span-3 row-span-2 rounded-3xl object-cover w-full h-full" />
           </div>
         </motion.div>
         <div>
@@ -233,14 +233,14 @@ export function WhyChooseSection() {
 
 export function GalleryPreview() {
   const images = [
-    { src: campus, label: "Campus" },
-    { src: classroom1, label: "Classroom" },
-    { src: classroom2, label: "Learning" },
-    { src: classroom3, label: "Students" },
-    { src: classroom4, label: "Teaching" },
-    { src: reception, label: "Reception" },
-    { src: office, label: "Administration" },
-    { src: corridor, label: "Corridors" },
+    { src: campus, label: "Main Building" },
+    { src: activity1, label: "Montessori Activity" },
+    { src: activity2, label: "Circle Learning" },
+    { src: activity3, label: "Reading Time" },
+    { src: activity4, label: "Interactive Learning" },
+    { src: activity5, label: "Practice Session" },
+    { src: activity7, label: "Exhibition" },
+    { src: activity8, label: "Sports Parade" },
   ];
   return (
     <section className="py-20 sm:py-28 px-4">
@@ -277,10 +277,10 @@ export function GalleryPreview() {
 }
 
 const testimonials = [
-  { name: "Mrs. Anjali Reddy", role: "Parent of Class 5", quote: "The teachers genuinely care about each child. My daughter has grown so confident since joining Holy Fathima.", img: classroom2 },
-  { name: "Mr. Imran Khan", role: "Parent of Class 9", quote: "Excellent academics combined with strong values. The campus is safe and the staff is always approachable.", img: classroom1 },
-  { name: "Sneha S.", role: "Alumna, Class 10", quote: "Holy Fathima shaped who I am today. The faculty pushed me to dream big and gave me the tools to get there.", img: classroom3 },
-  { name: "Mr. Ramesh Naidu", role: "Parent of UKG", quote: "Best decision we made. The play-based learning has my son excited to go to school every single day.", img: classroom4 },
+  { name: "Mrs. Anjali Reddy", role: "Parent of Class 5", quote: "The teachers genuinely care about each child. My daughter has grown so confident since joining Holy Fathima.", img: activity3 },
+  { name: "Mr. Imran Khan", role: "Parent of Class 9", quote: "Excellent academics combined with strong values. The campus is safe and the staff is always approachable.", img: activity1 },
+  { name: "Sneha S.", role: "Alumna, Class 10", quote: "Holy Fathima shaped who I am today. The faculty pushed me to dream big and gave me the tools to get there.", img: activity7 },
+  { name: "Mr. Ramesh Naidu", role: "Parent of UKG", quote: "Best decision we made. The play-based learning has my son excited to go to school every single day.", img: activity4 },
 ];
 
 export function TestimonialsSection() {

@@ -12,8 +12,22 @@ import activity5 from "@/assets/activity-5.png";
 import activity6 from "@/assets/activity-6.png";
 import activity7 from "@/assets/activity-7.png";
 import activity8 from "@/assets/activity-8.png";
-...
+
+export const Route = createFileRoute("/gallery")({
+  head: () => ({
+    meta: [
+      { title: "Gallery — Campus Life at Holy Fathima High School" },
+      { name: "description", content: "A glimpse into life at Holy Fathima High School, Hafeezpet — classrooms, campus events and student moments." },
+      { property: "og:title", content: "Gallery — Holy Fathima High School" },
+      { property: "og:description", content: "Photos of our campus, classrooms, events and student life in Hafeezpet, Hyderabad." },
+      { property: "og:image", content: campus },
+    ],
+  }),
+  component: GalleryPage,
+});
+
 type Item = { src: string; cat: "Campus" | "Classrooms" | "Facilities" | "Events"; label: string };
+
 const all: Item[] = [
   { src: campus, cat: "Campus", label: "Main Building" },
   { src: activity1, cat: "Classrooms", label: "Montessori Activity" },
@@ -37,12 +51,12 @@ function GalleryPage() {
 
   return (
     <>
-      <PageHero eyebrow="Gallery" title={<>Moments from our <span className="text-gradient-gold">vibrant campus</span></>} description="A peek into the everyday life that makes Holy Fathima a special place to learn and grow." image={classroom3} />
+      <PageHero eyebrow="Gallery" title={<>Moments from our <span className="text-gradient-gold">vibrant campus</span></>} description="A peek into the everyday life that makes Holy Fathima a special place to learn and grow." image={activity3} />
 
       <section className="py-16 px-4">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-wrap justify-center gap-2">
-            {(["All", "Campus", "Classrooms", "Facilities"] as const).map((f) => (
+            {(["All", "Campus", "Classrooms", "Facilities", "Events"] as const).map((f) => (
               <button key={f} onClick={() => setFilter(f)}
                 className={`px-5 py-2 rounded-full text-sm font-semibold transition ${filter === f ? "gradient-royal text-white shadow-glow" : "bg-card border border-border hover:border-[color:var(--gold)]"}`}>
                 {f}
