@@ -4,37 +4,40 @@ import { motion, AnimatePresence } from "framer-motion";
 import { PageHero } from "@/components/site/PageHero";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import campus from "@/assets/marthanda-nagar.jpg";
-import classroom1 from "@/assets/classroom-1.webp";
-import classroom2 from "@/assets/classroom-2.webp";
-import classroom3 from "@/assets/classroom-3.webp";
-import classroom4 from "@/assets/classroom-4.webp";
-import office from "@/assets/office.webp";
-import reception from "@/assets/reception.webp";
-import corridor from "@/assets/corridor.webp";
+import activity1 from "@/assets/activity-1.png";
+import activity2 from "@/assets/activity-2.png";
+import activity3 from "@/assets/activity-3.png";
+import activity4 from "@/assets/activity-4.png";
+import activity5 from "@/assets/activity-5.png";
+import activity6 from "@/assets/activity-6.png";
+import activity7 from "@/assets/activity-7.png";
+import activity8 from "@/assets/activity-8.png";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
       { title: "Gallery — Campus Life at Holy Fathima High School" },
-      { name: "description", content: "A glimpse into life at Holy Fathima High School, Hafeezpet — classrooms, campus, events and student moments." },
+      { name: "description", content: "A glimpse into life at Holy Fathima High School, Hafeezpet — classrooms, campus events and student moments." },
       { property: "og:title", content: "Gallery — Holy Fathima High School" },
-      { property: "og:description", content: "Photos of our campus, classrooms and student life in Hafeezpet, Hyderabad." },
+      { property: "og:description", content: "Photos of our campus, classrooms, events and student life in Hafeezpet, Hyderabad." },
       { property: "og:image", content: campus },
     ],
   }),
   component: GalleryPage,
 });
 
-type Item = { src: string; cat: "Campus" | "Classrooms" | "Facilities"; label: string };
+type Item = { src: string; cat: "Campus" | "Classrooms" | "Facilities" | "Events"; label: string };
+
 const all: Item[] = [
   { src: campus, cat: "Campus", label: "Main Building" },
-  { src: reception, cat: "Campus", label: "Reception" },
-  { src: corridor, cat: "Campus", label: "Corridor" },
-  { src: office, cat: "Facilities", label: "Administrative Office" },
-  { src: classroom1, cat: "Classrooms", label: "Class in Session" },
-  { src: classroom2, cat: "Classrooms", label: "English Class" },
-  { src: classroom3, cat: "Classrooms", label: "Primary Class" },
-  { src: classroom4, cat: "Classrooms", label: "Junior Class" },
+  { src: activity1, cat: "Classrooms", label: "Montessori Activity" },
+  { src: activity2, cat: "Classrooms", label: "Circle Learning" },
+  { src: activity3, cat: "Classrooms", label: "Reading Time" },
+  { src: activity4, cat: "Classrooms", label: "Interactive Learning" },
+  { src: activity5, cat: "Facilities", label: "Practice Session" },
+  { src: activity6, cat: "Events", label: "School Gathering" },
+  { src: activity7, cat: "Events", label: "Exhibition" },
+  { src: activity8, cat: "Events", label: "Sports Parade" },
 ];
 
 function GalleryPage() {
@@ -48,12 +51,12 @@ function GalleryPage() {
 
   return (
     <>
-      <PageHero eyebrow="Gallery" title={<>Moments from our <span className="text-gradient-gold">vibrant campus</span></>} description="A peek into the everyday life that makes Holy Fathima a special place to learn and grow." image={classroom3} />
+      <PageHero eyebrow="Gallery" title={<>Moments from our <span className="text-gradient-gold">vibrant campus</span></>} description="A peek into the everyday life that makes Holy Fathima a special place to learn and grow." image={activity3} />
 
       <section className="py-16 px-4">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-wrap justify-center gap-2">
-            {(["All", "Campus", "Classrooms", "Facilities"] as const).map((f) => (
+            {(["All", "Campus", "Classrooms", "Facilities", "Events"] as const).map((f) => (
               <button key={f} onClick={() => setFilter(f)}
                 className={`px-5 py-2 rounded-full text-sm font-semibold transition ${filter === f ? "gradient-royal text-white shadow-glow" : "bg-card border border-border hover:border-[color:var(--gold)]"}`}>
                 {f}
