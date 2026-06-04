@@ -17,10 +17,10 @@ export const SCHOOL = {
   instagram: "https://www.instagram.com/holyfathimahighschool.mn/",
 };
 
-import marthandaImg from "@/assets/marthanda-nagar.jpg.asset.json";
-import adityaImg from "@/assets/aditya-nagar-branch.jpg.asset.json";
-import premImg from "@/assets/prem-nagar-branch.webp.asset.json";
-import kollurImg from "@/assets/kollur-branch.jpg.asset.json";
+import marthandaImg from "@/assets/marthanda-nagar.jpg";
+import adityaImg from "@/assets/aditya-nagar-branch.jpg";
+import premImg from "@/assets/prem-nagar-branch.webp";
+import kollurImg from "@/assets/kollur-branch.jpg";
 
 export type Branch = {
   id: string;
