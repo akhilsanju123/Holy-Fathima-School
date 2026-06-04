@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ChevronLeft, ChevronRight, Sparkles } from "lucide-react";
-import heroBannerData from "@/assets/hero-banner.png.asset.json";
+import heroBanner from "@/assets/hero-banner.png";
 import classroom1 from "@/assets/classroom-1.webp";
 import classroom2 from "@/assets/classroom-2.webp";
 import logo from "@/assets/logo.webp";
