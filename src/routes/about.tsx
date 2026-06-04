@@ -4,8 +4,8 @@ import { PageHero } from "@/components/site/PageHero";
 import { SectionHeading } from "@/components/site/SectionHeading";
 import { Counter } from "@/components/site/Counter";
 import campus from "@/assets/marthanda-nagar.jpg";
-import classroom1 from "@/assets/classroom-1.webp";
-import office from "@/assets/office.webp";
+import activity3 from "@/assets/activity-3.png";
+import activity6 from "@/assets/activity-6.png";
 import chairman from "@/assets/chairman.jpg";
 import { SCHOOL } from "@/lib/school";
 import { Eye, Target, HeartHandshake } from "lucide-react";
@@ -30,7 +30,7 @@ function AboutPage() {
 
       <section className="py-20 px-4">
         <div className="mx-auto max-w-7xl grid lg:grid-cols-2 gap-12 items-center">
-          <motion.img initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} src={classroom1} alt="" className="rounded-3xl shadow-glow w-full h-[480px] object-cover" />
+          <motion.img initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} src={activity3} alt="Students learning together in classroom" className="rounded-3xl shadow-glow w-full h-[480px] object-cover" />
           <div>
             <SectionHeading align="left" eyebrow="Our Story" title={<>Built on a vision of <span className="text-gradient-gold">quality education</span></>} />
             <p className="mt-6 text-muted-foreground leading-relaxed">
@@ -155,7 +155,7 @@ function AboutPage() {
         </div>
       </section>
 
-      <img src={office} alt="" className="hidden" />
+      <img src={activity6} alt="School event gathering" className="hidden" />
     </>
   );
 }
