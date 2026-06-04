@@ -37,7 +37,7 @@ export const BRANCHES: Branch[] = [
     name: "Main Branch — Marthanda Nagar",
     address: "H.No. 4-161, Near Rahamaniya Masjid, Marthanda Nagar, Hafeezpet, Hyderabad",
     phones: ["9391668092"],
-    image: marthandaImg.url,
+    image: marthandaImg,
     mapEmbed:
       "https://www.google.com/maps?q=Marthanda+Nagar,+Hafeezpet,+Hyderabad&output=embed",
   },
@@ -46,7 +46,7 @@ export const BRANCHES: Branch[] = [
     name: "Aditya Nagar Branch",
     address: "#3-450, Street No. 8, Near Rashideen Masjid, Aditya Nagar, Hyderabad",
     phones: ["9391668092"],
-    image: adityaImg.url,
+    image: adityaImg,
     mapEmbed:
       "https://www.google.com/maps?q=Aditya+Nagar,+Hafeezpet,+Hyderabad&output=embed",
   },
@@ -55,7 +55,7 @@ export const BRANCHES: Branch[] = [
     name: "Prem Nagar Branch",
     address: "Beside Seeyounu Church, Prem Nagar, Hyderabad",
     phones: ["9391668092"],
-    image: premImg.url,
+    image: premImg,
     mapEmbed:
       "https://www.google.com/maps?q=Prem+Nagar,+Hafeezpet,+Hyderabad&output=embed",
   },
@@ -64,7 +64,7 @@ export const BRANCHES: Branch[] = [
     name: "Indra Reddy Nagar Branch",
     address: "Phase-I, KCR Nagar, Kollur, Rangareddy Dist",
     phones: ["9391668092", "7416315599"],
-    image: kollurImg.url,
+    image: kollurImg,
     mapEmbed:
       "https://www.google.com/maps?q=Indra+Reddy+Nagar,+KCR+Nagar,+Kollur&output=embed",
   },
