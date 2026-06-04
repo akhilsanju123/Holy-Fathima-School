@@ -10,13 +10,14 @@ import { SectionHeading } from "./SectionHeading";
 import { Counter } from "./Counter";
 import { SCHOOL } from "@/lib/school";
 import campus from "@/assets/marthanda-nagar.jpg";
-import classroom1 from "@/assets/classroom-1.webp";
-import classroom2 from "@/assets/classroom-2.webp";
-import classroom3 from "@/assets/classroom-3.webp";
-import classroom4 from "@/assets/classroom-4.webp";
-import office from "@/assets/office.webp";
-import reception from "@/assets/reception.webp";
-import corridor from "@/assets/corridor.webp";
+import activity1 from "@/assets/activity-1.png";
+import activity2 from "@/assets/activity-2.png";
+import activity3 from "@/assets/activity-3.png";
+import activity4 from "@/assets/activity-4.png";
+import activity5 from "@/assets/activity-5.png";
+import activity6 from "@/assets/activity-6.png";
+import activity7 from "@/assets/activity-7.png";
+import activity8 from "@/assets/activity-8.png";
 
 export function AnnouncementTicker() {
   const items = [
