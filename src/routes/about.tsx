@@ -3,12 +3,10 @@ import { motion } from "framer-motion";
 import { PageHero } from "@/components/site/PageHero";
 import { SectionHeading } from "@/components/site/SectionHeading";
 import { Counter } from "@/components/site/Counter";
-import campusData from "@/assets/marthanda-nagar.jpg.asset.json";
-const campus = campusData.url;
+import campus from "@/assets/marthanda-nagar.jpg";
 import classroom1 from "@/assets/classroom-1.webp";
 import office from "@/assets/office.webp";
-import chairmanData from "@/assets/chairman.jpg.asset.json";
-const chairman = chairmanData.url;
+import chairman from "@/assets/chairman.jpg";
 import { SCHOOL } from "@/lib/school";
 import { Eye, Target, HeartHandshake } from "lucide-react";
 
